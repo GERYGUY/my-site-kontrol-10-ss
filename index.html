@@ -1,11 +1,150 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Мой сайт</title>
-  </head>
-  <body>
-    <h1>Привет, мир!</h1>
-    <p>Это мой минималистичный HTML-сайт, опубликованный через GitHub Pages.</p>
-  </body>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🧠 Цифровая База | Survival Hub</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e88e5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+      justify-content: space-around;
+    }
+    .column {
+      flex: 1 1 300px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      padding: 20px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #1e88e5;
+      font-size: 1.3em;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      color: #0d47a1;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @media screen and (max-width: 700px) {
+      main {
+        flex-direction: column;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🧠 Личная Цифровая База</h1>
+  <p>Все важные ссылки, книги и ресурсы выживания в интернете</p>
+</header>
+
+<main>
+  <!-- Колонка: Софт -->
+  <div class="column">
+    <h2>🛠 Ссылки на софт</h2>
+    <ul>
+      <li><a href="https://portableapps.com/apps" target="_blank">PortableApps</a></li>
+      <li><a href="https://www.7-zip.org/" target="_blank">7-Zip</a></li>
+      <li><a href="https://vscodium.com/" target="_blank">VSCodium</a></li>
+      <li><a href="https://rufus.ie/" target="_blank">Rufus (Live USB)</a></li>
+      <li><a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a></li>
+    </ul>
+  </div>
+
+  <!-- Колонка: Онлайн книги -->
+  <div class="column">
+    <h2>📚 Ссылки на книги (PDF)</h2>
+    <ul>
+      <li><a href="https://docdro.id/6bH5iAk" target="_blank">Python для начального пентеста</a></li>
+      <li><a href="books/Linux_Command_Line.pdf" download>Linux Command Line (скачать)</a></li>
+      <li><a href="books/Red_Team_Manual.pdf" download>Red Team Manual (скачать)</a></li>
+    </ul>
+  </div>
+
+  <!-- Колонка: MEGA -->
+  <div class="column">
+    <h2>☁️ MEGA-файлы</h2>
+    <ul>
+      <li><a href="https://mega.nz/file/Xxxxxx#КЛЮЧ1" target="_blank">Архив книг</a></li>
+      <li><a href="https://mega.nz/file/Yyyyyy#КЛЮЧ2" target="_blank">PDF CheatSheets</a></li>
+      <li><a href="https://mega.nz/file/Zzzzzz#КЛЮЧ3" target="_blank">Копия Digital Survival Pack</a></li>
+    </ul>
+  </div>
+
+  <!-- Колонка: Чат-боты -->
+  <div class="column">
+    <h2>🤖 Чат-боты / ИИ</h2>
+    <ul>
+      <li><a href="https://duck.ai" target="_blank">Duck.AI</a></li>
+      <li><a href="https://qwen.chat" target="_blank">Qwen.Chat</a></li>
+      <li><a href="https://lmarena.net/" target="_blank">LM Arena (много ИИ моделей)</a></li>
+      <li><a href="https://chat.lmsys.org/" target="_blank">LMSYS Chatbot Arena</a></li>
+    </ul>
+  </div>
+
+  <!-- Колонка: Полезное -->
+  <div class="column">
+    <h2>🌐 Полезные сайты</h2>
+    <ul>
+      <li><a href="https://explainshell.com/" target="_blank">ExplainShell (анализ bash-команд)</a></li>
+      <li><a href="https://overapi.com/linux" target="_blank">Linux командный справочник</a></li>
+      <li><a href="https://tryhackme.com/" target="_blank">TryHackMe (пентест тренировка)</a></li>
+      <li><a href="https://roadmap.sh/" target="_blank">Roadmap.sh (карты развития IT-навыков)</a></li>
+    </ul>
+  </div>
+
+  <!-- Колонка: Онлайн игры -->
+  <div class="column">
+    <h2>🎮 Онлайн игры в браузере</h2>
+    <ul>
+      <li><a href="https://store.steampowered.com/category/freetoplay/" target="_blank">Steam Free to Play</a></li>
+      <li><a href="https://hexgl.bkcore.com/" target="_blank">HexGL (гонка)</a></li>
+      <li><a href="https://playclassic.games/" target="_blank">PlayClassicGames</a></li>
+      <li><a href="https://emupedia.net/beta/emuos/" target="_blank">EmuOS (игры в Windows 95 стиле)</a></li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 — Создан с любовью к автономности. Обновлено: октябрь 2025.
+</footer>
+
+</body>
 </html>
